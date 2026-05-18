@@ -90,13 +90,13 @@ def TwoPlayerGame(PlayerTwoStartPos):
     print(f'Player Two Winrate: {Wins.count(2) / len(Wins)}')
     print(f'Two Player Game Average Rolls: {sum(Rolls) / len(Rolls)}')
 
+if __name__ == "__main__":
+    OnePlayerGame() 
+    TwoPlayerGame(0) 
 
-OnePlayerGame() #Average Rolls 11
-TwoPlayerGame(0) #Average Rolls 15, Player One Win Rate 53%
-
-TwoPlayerGame(3) #Player One Win Rate 53%
-TwoPlayerGame(6) #Player One Win Rate 50%
-TwoPlayerGame(9) #Player One Win Rate 41%
-TwoPlayerGame(12) # Player One Win Rate 38%
+    TwoPlayerGame(3)
+    TwoPlayerGame(6)
+    TwoPlayerGame(9)
+    TwoPlayerGame(12) 
 
 
